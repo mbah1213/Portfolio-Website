@@ -127,30 +127,44 @@ bodyn {
     padding: 0%;
    
   }
-  #skills-section {
-    background-color: #6ccccc; 
+  .skills-section {
+    width: 100%; /* Skills section on the left */
     margin: 0%;
     padding: 0%;
   }
   
-  #skills-section h2 {
-    color: #2c3e50; 
+  .awards-section {
+    width: 100%; /* Awards section on the right */
     margin: 0%;
     padding: 0%;
   }
   
-  #skills-section p {
-    color: #2c3e50; 
-    margin: 0%;
-    padding: 0%;
+  .skills-category,
+  .awards-category {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
   
-  #skills-section img {
-    width: 30%;
-    height: auto;
-    margin: 0%;
-    padding: 0%;
+  .skills-category h3,
+  .awards-category h3 {
+    text-align: center;
+    color: #555;
   }
+  
+  ul,
+  ol {
+    list-style-position: inside;
+    padding-left: 20px;
+  }
+  
+  li {
+    font-size: 16px;
+    color: #333;
+  }
+  
   #contact-section {
     background-color: #6ccccc; 
     margin: 0%;
