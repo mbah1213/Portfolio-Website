@@ -1,7 +1,7 @@
 /* Custom Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f8f9fa;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1e2a3a; /* Updated primary background color */
   margin: 0;
   padding: 0;
 }
@@ -32,7 +32,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  background: rgba(0, 0, 0, 0.4); /* Slightly lighter overlay */
   z-index: 0;
 }
 
@@ -40,61 +40,335 @@ body {
 .headshot {
   z-index: 1;
   max-width: 200px;
+  height: 300px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
   object-fit: cover;
-  height: 300px;
 }
 
 /* Hero Text Styling */
 h1, .tagline {
   z-index: 1;
   margin: 0;
+  padding: 0;
 }
 
-
+/* Contact Icon Styling */
 .contact-icon {
-  color: #444;
+  color: #8e44ad; /* Rich purple for contact icons */
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .contact-icon:hover {
-  color: #007bff;
+  color: #2980b9; /* Softer blue on hover */
 }
 
-#about-section, #mission-section {
-  background-color: #2c3e50;
+/* Section Backgrounds */
+#about-section, #mission-section, #certificates-section, #skills-section {
+  background-color: #34495e; /* Medium dark gray for sections */
 }
 
 #contact-section {
-  background-color: #6ccccc;
+  background-color: #6ccccc; /* Keep this as is or use #2980b9 for a softer look */
 }
 
+/* Text Helper Class */
 .text-white {
-  color: white;
+  color: #ecf0f1; /* Light grayish-white text */
 }
 
 /* About Me Image Styling */
 #about-section img {
-  max-width: 200px;         /* Set a maximum width for the image */
-  height: auto;             /* Maintain aspect ratio */
-  border-radius: 50%;       /* Make the image circular */
-  margin-top: 20px;         /* Add top margin */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow around the image */
-  object-fit: cover;        /* Ensure the image covers the container proportionally */
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 /* Mission Section Image Styling */
 #mission-section img {
-  max-width: 200px;            /* Set a maximum width for the image */
-  height: 100px;               /* Set a fixed height for the image */
-  border-radius: 10px;         /* Add rounded corners to the image */
-  margin-right: 50px;          /* Add right margin */
-  margin-left: 30px;           /* Add left margin */
-  display: block;              /* Ensure the image is displayed as a block element */
-  width: 200px;                /* Set a fixed width */
-  padding: 0;                  /* Remove any padding */
+  max-width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 30px;
+  display: block;
+  width: 200px;
+  padding: 0;
 }
 
+/* Education Section */
+#education {
+  color: white;
+  padding: 80px 30px; /* Adjusted padding for better spacing */
+  text-align: center;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto; /* Added more margin for better separation */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#education h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#education h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+#education p {
+  font-size: 18px;
+  color: #ddd;
+  margin: 5px 0;
+}
+
+#education ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+#education ul li {
+  font-size: 16px;
+  padding: 10px; /* Increased padding for readability */
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+#education ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* Custom Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1e2a3a; /* Updated primary background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* General Section Styling */
+section {
+  padding: 50px 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* About Me Section */
+#about-section {
+  background-color: #34495e; /* Medium dark gray background */
+  color: #ecf0f1; /* Light grayish-white text */
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 50px auto; /* Centering the section */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#about-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd; /* Slightly softer text color */
+}
+
+#about-section img {
+  max-width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Mission Section */
+#mission-section {
+  background-color: #8e44ad; /* Rich purple background */
+  color: white;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#mission-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#mission-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ecf0f1; /* Light grayish-white text */
+}
+
+#mission-section img {
+  max-width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 50px;
+  margin-left: 30px;
+  display: inline-block;
+  object-fit: cover;
+}
+
+
+/* Skills Section */
+#skills-section {
+  background-color: #34495e; /* Medium dark gray background */
+  color: #ecf0f1; /* Light grayish-white text */
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 50px auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#skills-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#skills-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills-section ul li {
+  font-size: 18px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent list items */
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+#skills-section ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight color change on hover */
+}
+
+/* Certificates Section */
+#certificates-section {
+  background-color: #34495e; /* Medium dark gray background */
+  color: #ecf0f1; /* Light grayish-white text */
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#certificates-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#certificates-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#certificates-section ul li {
+  font-size: 18px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent list items */
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+#certificates-section ul li:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight color change on hover */
+}
+
+#certificates-section a {
+  color: #6ccccc; /* Light blue for links */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#certificates-section a:hover {
+  color: #2980b9; /* Softer, cooler blue on hover */
+}
+
+/* Contact Section */
+#contact-section {
+  background-color: #2c3e50; /* Darker gray background */
+  color: #ecf0f1; /* Light grayish-white text */
+  border-radius: 10px;
+  padding: 60px 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#contact-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd; /* Slightly softer text color */
+}
+
+/* Contact Icons */
+.contact-icon {
+  font-size: 24px;
+  margin: 10px;
+  color: #8e44ad; /* Rich purple for the icons */
+  transition: all 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #2980b9; /* Softer, cooler blue on hover */
+}
+
+.contact-icon a {
+  text-decoration: none;
+}
+
+/* Contact Form (if you have one) */
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #34495e;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #8e44ad; /* Rich purple submit button */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #2980b9; /* Softer, cooler blue on hover */
+}
